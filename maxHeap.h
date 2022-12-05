@@ -10,9 +10,9 @@ void swap(int & x, int & y) {
 
 class maxHeap {
 public:
-    int *arr; // pointer to array of elements in heap
-    int capacity; // maximum possible size of min heap
-    int size; // Current number of elements in min heap
+    int *arr; // pointer to the array used for the heap
+    int capacity; // maximum allowed objects in the heap
+    int size; // The size of the heap
 
     maxHeap() {
         size = 0;
@@ -63,7 +63,6 @@ public:
         int left, right;
         int biggest = index;
         while (biggest < size) {
-
             //get the right positions
             left = 2 * index + 1;
             right = 2 * index + 2;
