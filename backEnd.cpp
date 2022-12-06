@@ -321,7 +321,7 @@ void readEnergyFile() {
     Hashtable commercialPetroleumHash;
     commercialMap["commercialPetroleum"].second = commercialPetroleumHash;
     Hashtable commercialNaturalGasHash;
-    commercialMap["commercialNaturalGas"].Second = commercialNaturalGasHash;
+    commercialMap["commercialNaturalGas"].second = commercialNaturalGasHash;
     Hashtable commercialSolarHash;
     commercialMap["commercialSolar"].second = commercialSolarHash;
     Hashtable commercialWindHash;
