@@ -23,7 +23,7 @@ int main()
         getline(cin, optionString);
         while (!isInputValid(optionString) || (stoi(optionString) < 1 || stoi(optionString) > 3) || (stoi(optionString) == 2)) {
             if ((stoi(optionString) == 2)) {
-                cout << "To Play The Energy Guessing Game, You Must Choose Which State Consumed The Lowest Type of Energy of Your Choosing.\n2";
+                cout << "To Play The Energy Guessing Game, You Must Choose Which State Consumed The Lowest Type of Energy of Your Choosing.\n";
                 printMenu();
                 getline(cin, optionString);
             }
@@ -385,33 +385,6 @@ int main()
                     checkQuiz(guessState, correct);
                     transportationMap["transportationNaturalGas"].second.find(stateYear,correct);
                 }
-            }
-        }
-        else if (choice == 2) {
-            printEnergyMenu();
-            getline(cin, energyChoiceString);
-            while (!isInputValid(energyChoiceString) || (stoi(energyChoiceString) < 1 || stoi(energyChoiceString) > 6)) {
-                invalidCategoryPrint();
-                getline(cin, energyChoiceString);
-            }
-            energyChoice = stoi(energyChoiceString);
-            if (energyChoice == 1) {
-                printStateInput(choice, stateList);
-            }
-            else if (energyChoice == 2) {
-                printStateInput(choice, stateList);
-            }
-            else if (energyChoice == 3) {
-                printStateInput(choice, stateList);
-            }
-            else if (energyChoice == 4) {
-                printStateInput(choice, stateList);
-            }
-            else if (energyChoice == 5) {
-                printStateInput(choice, stateList);
-            }
-            else if (energyChoice == 6) {
-                printStateInput(choice, stateList);
             }
         }
         else if (choice == 3) {
